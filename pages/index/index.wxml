@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="page_hd">
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">密钥</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="genAndSync" password="true" value="{{key}}" placeholder="请输入密钥"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">标识</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="gen" value="{{flag}}" placeholder="请输入标识"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">8位密码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value="{{p8}}" placeholder="8位密码"/>
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn" data-type="8" bindtap="copyMe">复制</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">16位密码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value="{{p16}}" placeholder="16位密码"/>
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn" data-type="16" bindtap="copyMe">复制</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">24位密码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value="{{p24}}" placeholder="24位密码"/>
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn" data-type="24" bindtap="copyMe">复制</view>
+                </view>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

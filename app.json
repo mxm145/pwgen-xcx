@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/setting/setting"
+  ],
+  "window":{
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "密码生成器",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

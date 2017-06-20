@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="page_hd">
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">密钥</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="synKey" value="{{key}}" placeholder="请输入密钥"/>
+                </view>
+            </view>
+          </view>
+      </view>
+    </view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="setKey">确定</button>
+    </view>
+  </view>
+</view>
